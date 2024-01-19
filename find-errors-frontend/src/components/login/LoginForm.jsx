@@ -59,7 +59,7 @@ export const LoginForm = ({ setUserData }) => {
           placeholder="enter password"
           label={true}
         />
-        <InputField type="button" name="Submit" />
+        <InputField type="submit" name="Submit" />
       </form>
     </div>
   );
