@@ -11,8 +11,8 @@ export const LoginForm = ({ setUserData }) => {
     console.log(e.target.password.value);
 
     let url = isSignIn
-      ? "http://localhost:8081/sign-in"
-      : "http://localhost:8081/sign-up";
+      ? "http://localhost:5173/sign-in"
+      : "http://localhost:5173/sign-up";
     let body = new URLSearchParams();
     !isSignIn && body.append("name", e.target.name.value);
     body.append("email", e.target.email.value);
@@ -59,7 +59,7 @@ export const LoginForm = ({ setUserData }) => {
           placeholder="enter password"
           label={true}
         />
-        <InputField type="submit" name="Submit" />
+        <InputField type="submit" name="submit" />
       </form>
     </div>
   );
